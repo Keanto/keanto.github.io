@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visual Novel</title>
+    <link rel="stylesheet" href="../keanto.github.io/Modelo/css.css">
+</head>
+<body>
+    <div class="container">
+        <div class="background" id="background"></div>
+        <img class="character" id="character" src="" alt="Personagem 1">
+        <img class="character" id="character2" src="" alt="Personagem 2">
+        <img class="character" id="character3" src="" alt="Personagem 3">
+        <div class="dialogue-box">
+            <div class="character-name" id="character-name">Nome do Personagem</div>
+            <div class="dialogue" id="dialogue">Texto da história...</div>
+            <div class="choices" id="choices" style="display: none;">
+                <button onclick="chooseOption(1)">Opção 1</button>
+                <button onclick="chooseOption(2)">Opção 2</button>
+                <button onclick="chooseOption(3)">Opção 3</button>
+            </div>
+            <button id="next-button" onclick="nextDialogue()">Próximo</button>
+        </div>
+    </div>
+
+    <!-- Inclua o js.js como um módulo -->
+    <script  src="../keanto.github.io/Modelo/js.js"></script>
+ 
+</body>
+</html>

@@ -232,7 +232,7 @@ scene10: {
     ],
     options: [
         { text: "Explicar que não temos uma no momento", next: "scene6" },
-        { text: "Falar que Rams desse tamanho são caras e denecessarias.", next: "scene15" },
+        { text: "Falar que Rams desse tamanho são caras e denecessarias, além delas nõa existirem", next: "scene15" },
         { text: "Pedir uma para a Kurisu", next: "scene7" }
     ],
     backgroundImage: "../src/mapas/quarto.jpg"
@@ -250,8 +250,15 @@ scene6: {
             ] 
         },
         { 
+            characterName: "Kurisu", 
+            text: "Okarin, Ram de 80 Gigas são impensáveis, não existe, e mesmo se existissem, seriam estupidamente caras, não dá falsas esperanças para mayuri.",
+            characters: [
+                { image: "../src/personagens/kurisu.png", slot: 1 }
+            ] 
+        },
+        { 
             characterName: "Mayuri", 
-            text: "Obrigada, Vamos conseguir fazer mais coisas com uma! ( +5 pontos de amizade)",
+            text: "Não seria falsas esperanças, não cobre muito do Okarin, Mesmo assim obrigada Okarin! ( +5 pontos de amizade)",
             characters: [
                  { image: "../src/personagens/Mayuri.png", slot: 2 },
                  { image: "../src/personagens/kurisu.png", slot: 1 }
@@ -273,6 +280,13 @@ scene7: {
                 { image: "../src/personagens/kurisu.png", slot: 1 }
             ] 
         },
+        { 
+            characterName: "Kurisu", 
+            text: "Okarin, Ram de 80 Gigas são impensáveis, não existe, e mesmo se existissem, seriam estupidamente caras, não dá falsas esperanças para mayuri.",
+            characters: [
+                { image: "../src/personagens/kurisu.png", slot: 1 }
+            ] 
+        },
     ],
     options: [
         { text: "Desculpa Kurisu...", next: "scene15" },
@@ -282,6 +296,13 @@ scene7: {
 
 scene15: {
     dialogues: [
+        { 
+            characterName: "Você", 
+            text: "Mayuri, Não existe ram de 80 Gigas, e mesmo se existissem seriam muito caras, mas seria interessante mesmo ter uma, independente que eu não iria conseguir usar nem 7GB dela de uma vez.",
+            characters: [
+                { image: "../src/personagens/Okarin.png", slot: 3 }
+            ] 
+        },
         { 
             characterName: "Narrador", 
             text: "Após resolver essa situação, Você se assusta com Suzura entrando inexperadamente no lugar, dando um chutão na porta!",

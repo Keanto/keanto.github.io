@@ -637,12 +637,12 @@ function updateDialogue(dialogueData) {
     characterName.textContent = dialogueData.characterName;
     dialogue.textContent = dialogueData.text;
 
-    // Reset characters display
+    // Restar slots de personagens
     character.style.display = 'none';
     character2.style.display = 'none';
     character3.style.display = 'none';
 
-    // Display the characters according to the slots
+    // Display de acordo com Slot
     dialogueData.characters.forEach(characterData => {
         if (characterData.slot === 1) {
             character.src = characterData.image;
@@ -658,7 +658,7 @@ function updateDialogue(dialogueData) {
             
         };
 
-       
+       // Cores dos nomes por personagem
 
     });
 

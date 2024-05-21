@@ -1,0 +1,24 @@
+modelos
+
+scene1: {
+        dialogues: [
+            { 
+                characterName: "Personagem B", 
+                text: "Você escolheu a opção 1.", 
+                characters: [
+                    { image: "../src/personagens/mayuri.png", slot: 2 }
+                ] 
+            },
+            { 
+                characterName: "Personagem A", 
+                text: "Esta é uma nova linha de história.", 
+                characters: [
+                    { image: "../src/personagens/kurisu.png", slot: 1 }
+                ] 
+            }
+        ],
+        options: [
+            { text: "Continuar", next: "end" }
+        ],
+        backgroundImage: "../src/mapas/quarto.jpg"
+    },

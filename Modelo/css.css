@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+}
+
+.character {
+    position: absolute;
+    bottom: -46%;
+    left: 75%;
+    transform: translateX(-50%);
+    z-index: 2;
+    max-width: 50%;
+}
+
+#character {
+    right: 10%;
+}
+
+#character2 {
+    left: 17%;
+    top: 9%;
+}
+
+#character3 {
+    left: 48%;
+    top: 10%;
+}
+
+
+.dialogue-box {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 20px;
+    z-index: 3;
+    box-sizing: border-box;
+}
+
+.character-name {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 28px;
+}
+
+.dialogue {
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+}
+
+.choices button {
+    background-color: #444;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.choices button:hover {
+    background-color: #666;
+}
+
+
+#next-button {
+    background-color: #444;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#next-button:hover {
+    background-color: #666;
+}
+
+.red {
+    color: red;
+}
+
+.blue {
+    color: blue;
+}
